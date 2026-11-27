@@ -81,12 +81,12 @@ strong { font-weight: 670; }
   display: grid;
   grid-template-columns: minmax(0, 1fr) max-content minmax(0, 1fr);
   margin-block-start: 11px;
-  font-size: var(--text-label);
-  font-weight: 530;
+  font: 550 var(--text-secondary)/1.4 var(--sans);
 }
-.hero-contacts a { grid-column: 2; min-height: 28px; gap: 8px; padding-block: 3px; white-space: nowrap; }
-.hero-contacts .profile-icon, .hero-contacts .mail-icon { flex: none; width: 17px; text-align: center; }
-.hero-contacts a:hover .profile-label { text-decoration: underline; text-underline-offset: 3px; }
+.hero-contacts a { grid-column: 2; min-height: 30px; gap: 9px; padding-block: 3px; color: var(--body-copy); white-space: nowrap; }
+.hero-contacts .profile-icon, .hero-contacts .mail-icon { flex: none; width: 18px; text-align: center; }
+.hero-contacts .profile-icon { height: 18px; }
+.hero-contacts a:hover .profile-label { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .text-link, .out { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; }
 .text-link:hover, .out:hover { text-decoration: underline; text-underline-offset: 4px; }
 .jump { font-size: .9em; line-height: 1; }
@@ -243,6 +243,7 @@ html:lang(zh) .page-research .page-head p { max-width: 45em; }
 .publication-status::before { content: '✓'; margin-inline-end: 5px; }
 .pub-authors { color: var(--muted); font-size: var(--text-secondary); margin-top: 6px; line-height: 1.55; overflow-wrap: anywhere; }
 .pub-authors strong { padding: 1px 4px 2px; border-radius: 3px; background: light-dark(#e4eef8, #27405c); color: var(--accent); font-weight: 740; white-space: nowrap; }
+.co-first-marker { margin-inline-start: 1px; color: var(--accent); font-size: .78em; font-weight: 700; line-height: 0; }
 .pub-authors details { margin-top: 2px; }
 .pub-authors summary { color: var(--accent); cursor: pointer; width: fit-content; }
 .pub-authors details p { padding-block: 3px 1px; }
